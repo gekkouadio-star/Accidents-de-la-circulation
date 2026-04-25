@@ -1,4 +1,6 @@
 # --- BASES DE DONNÉES (Lourdes) ---
+data_bases/
+*.csv
 *.xls
 *.xlsx
 
