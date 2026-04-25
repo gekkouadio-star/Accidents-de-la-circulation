@@ -1,9 +1,4 @@
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 .DS_Store
-.gitkeep
-usagers.csv
-lieux.xls
-vehicules.csv
-caracteristiques.txt
-Projets tuteurés 2026 DU BDAP.pdf
-description-de-la-liste-des-vehicules-immatricules-impliques-dans-les-accidents-corporels.pdf
-description-des-bases-de-donnees-annuelles-2021.pdf
+**/.DS_Store
