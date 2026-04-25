@@ -1,3 +1,20 @@
-data_bases/
-data_bases/
+# --- BASES DE DONNÉES (Lourdes) ---
+*.xls
+*.xlsx
+
+# --- SYSTÈME MAC (Inutile) ---
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# --- PYTHON & JUPYTER ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.virtual_documents/
+
+# --- ENVIRONNEMENTS VIRTUELS ---
+env/
+venv/
+.env
