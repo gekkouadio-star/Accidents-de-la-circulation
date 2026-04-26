@@ -20,8 +20,6 @@ Mettre en évidence les limites et les complémentarités entre ces approches
 ## Structure du projet
 Le projet est organisé en trois notebooks principaux, conformément à la méthodologie vue en cours :
 ### 📁 Structure du projet
-
-```text
 .
 ├── 📂 EDA_Econometrie
 │   └── 📄 Analyse exploratoire et econometrie.ipynb
@@ -33,7 +31,6 @@ Le projet est organisé en trois notebooks principaux, conformément à la méth
 │   └── (données utilisées dans le projet)
 ├── 📄 .gitignore
 └── 📄 README.md
-
 
 ## Notebook 1 – Traitement de données
 Ce premier notebook est consacré à la préparation et à la compréhension des données :
