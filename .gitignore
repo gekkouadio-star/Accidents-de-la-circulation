@@ -1,8 +1,4 @@
 # --- BASES DE DONNÉES (Lourdes) ---
-data_bases/
-*.csv
-*.xls
-*.xlsx
 
 # --- SYSTÈME MAC (Inutile) ---
 .DS_Store
@@ -17,6 +13,5 @@ __pycache__/
 .virtual_documents/
 
 # --- ENVIRONNEMENTS VIRTUELS ---
-env/
 venv/
 .env
