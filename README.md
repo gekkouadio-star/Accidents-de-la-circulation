@@ -19,18 +19,18 @@ Mettre en évidence les limites et les complémentarités entre ces approches
 
 ## Structure du projet
 Le projet est organisé en trois notebooks principaux, conformément à la méthodologie vue en cours :
-### 📁 Structure du projet
+### Structure du projet
 .
-├── 📂 EDA_Econometrie
-│   └── 📄 Analyse exploratoire et econometrie.ipynb
-├── 📂 Non_parametrique
-│   └── 📄 Machine Learning (Approches non paramétriques).ipynb
-├── 📂 Traitement_de_données
-│   └── 📄 Traitement_de_donnees.ipynb
-├── 📂 data_bases
+├── EDA_Econometrie
+│   └── Analyse exploratoire et econometrie.ipynb
+├── Non_parametrique
+│   └── Machine Learning (Approches non paramétriques).ipynb
+├──  Traitement_de_données
+│   └──  Traitement_de_donnees.ipynb
+├──  data_bases
 │   └── (données utilisées dans le projet)
-├── 📄 .gitignore
-└── 📄 README.md
+├──  .gitignore
+└──  README.md
 
 ## Notebook 1 – Traitement de données
 Ce premier notebook est consacré à la préparation et à la compréhension des données :

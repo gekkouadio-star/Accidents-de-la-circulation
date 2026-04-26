@@ -15,6 +15,6 @@ __pycache__/
 # --- ENVIRONNEMENTS VIRTUELS ---
 venv/
 .envenv/
-venv/
+env/
 __pycache__/
 *.pyc
