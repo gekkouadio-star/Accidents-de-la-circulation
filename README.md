@@ -19,22 +19,20 @@ Mettre en évidence les limites et les complémentarités entre ces approches
 
 ## Structure du projet
 Le projet est organisé en trois notebooks principaux, conformément à la méthodologie vue en cours :
-projet_tuteres/
-│
-├── Traitement_de_données/
-│   └── Traitement_de_donnees.ipynb
-│
-├── EDA_Econometrie/
-│   └── Analyse exploratoire et econometrie.ipynb
-│
-├── Non_parametrique/
-│   └── Machine Learning (Approches non paramétriques).ipynb
-│
-├── data_bases/
+### 📁 Structure du projet
+
+```text
+.
+├── 📂 EDA_Econometrie
+│   └── 📄 Analyse exploratoire et econometrie.ipynb
+├── 📂 Non_parametrique
+│   └── 📄 Machine Learning (Approches non paramétriques).ipynb
+├── 📂 Traitement_de_données
+│   └── 📄 Traitement_de_donnees.ipynb
+├── 📂 data_bases
 │   └── (données utilisées dans le projet)
-│
-├── README.md
-└── .gitignore
+├── 📄 .gitignore
+└── 📄 README.md
 
 
 ## Notebook 1 – Traitement de données
@@ -54,7 +52,7 @@ détection des valeurs aberrantes,
 étude de l’équilibre des classes,
 analyses exploratoires avancées (tests du χ², ACP, ACM).
 
-### 👉 Objectif : préparer des données propres et cohérentes pour la modélisation.
+### Objectif : préparer des données propres et cohérentes pour la modélisation.
 
 #### Notebook 2 – Économétrie (approches paramétriques)
 Ce notebook vise à expliquer économiquement la gravité des accidents à l’aide de modèles paramétriques :
@@ -71,7 +69,7 @@ la significativité statistique,
 la validation des hypothèses,
 les limites des modèles paramétriques.
 
-### 👉 Objectif : comprendre et interpréter les déterminants de la gravité.
+### Objectif : comprendre et interpréter les déterminants de la gravité.
 
 #### Notebook 3 – Machine Learning et Deep Learning
 Ce notebook est dédié à une approche orientée prédiction, reposant sur des méthodes non paramétriques :
@@ -89,7 +87,7 @@ introduction de modèles de Deep Learning (réseaux de neurones),
 comparaison des performances (accuracy, F1-score, matrices de confusion),
 comparaison avec les modèles économétriques.
 
-### 👉 Objectif : améliorer la performance prédictive et comparer les approches explicatives et prédictives.
+### Objectif : améliorer la performance prédictive et comparer les approches explicatives et prédictives.
 
 #### Méthodologie générale
 Le projet suit une démarche progressive et cohérente :
@@ -101,13 +99,13 @@ Comparaison des résultats et discussion
 
 Cette approche permet de montrer la complémentarité entre économétrie et Machine Learning.
 
-⚠️ Remarques importantes
+Remarques importantes
 
 Les fichiers techniques (ex. .DS_Store, .ipynb_checkpoints) sont ignorés via le fichier .gitignore.
 Les résultats présentés dépendent du jeu de données utilisé et de sa qualité.
 Les modèles ML visent la performance prédictive, tandis que les modèles économétriques privilégient l’interprétation.
 
 
-##### ✅ Conclusion
+##### Conclusion
 Ce projet met en évidence que la gravité des accidents de la route résulte d’une combinaison complexe de facteurs liés à l’environnement, aux infrastructures et aux caractéristiques des usagers.
 L’association de méthodes économétriques et de techniques de Machine Learning permet d’obtenir une analyse à la fois interprétable et performante, répondant aux objectifs du projet.
