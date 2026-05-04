@@ -20,22 +20,35 @@ Mettre en évidence les limites et les complémentarités entre ces approches
 ## Structure du projet
 Le projet est organisé en trois notebooks principaux, conformément à la méthodologie vue en cours :
 
-```text
-.
-├── EDA_Econometrie
-│   └── Analyse exploratoire et econometrie.ipynb
-│
-├── Non_parametrique
-│   └── Machine Learning (Approches non paramétriques).ipynb
-│
-├── Traitement_de_données
-│   └── Traitement_de_donnees.ipynb
-│
-├── data_bases
-│   └── (données utilisées dans le projet)
-│
-├── .gitignore
-└── README.md
+```mermaid
+flowchart TB
+
+A["data_bases<br>(Données brutes)"]
+B["Traitement_de_données<br>Traitement_de_données.ipynb"]
+C["EDA, Économétrie<br>Analyse exploratoire<br>+ tests statistiques"]
+D{"Choix méthodologique"}
+
+%% Branche ML
+E["Machine Learning<br>Approches non paramétriques"]
+F["XGBoost<br>Random Forest<br>MLP"]
+G["Évaluation<br>Accuracy · F1 · Recall"]
+H["Importance des variables<br>(Permutation Importance)"]
+
+%% Branche économétrie
+I["Modèles économétriques<br>(Logit, Probit, Multinomial)"]
+
+J["Modèle final<br>(Comparaison ML / DL)"]
+K["Analyse & interprétation<br>Résultats et conclusions"]
+
+A --> B --> C --> D
+
+D -->|Approches prédictives| E
+E --> F --> G --> H --> J
+
+D -->|Approches explicatives| I
+I --> J
+
+J --> K
 
 
 ## Notebook 1 – Traitement de données
