@@ -23,32 +23,39 @@ Le projet est organisé en trois notebooks principaux, conformément à la méth
 ```mermaid
 flowchart TB
 
-A["data_bases<br>(Données brutes)"]
-B["Traitement_de_données<br>Traitement_de_données.ipynb"]
-C["EDA, Économétrie<br>Analyse exploratoire<br>+ tests statistiques"]
+A["📁 data_bases<br>(Données brutes)"]
+B["🧹 Traitement_de_données<br>Traitement_de_données.ipynb"]
+C["📊 EDA, Économétrie<br>Analyse exploratoire<br>+ tests statistiques"]
 D{"Choix méthodologique"}
 
 %% Branche ML
-E["Machine Learning<br>Approches non paramétriques"]
+E["🤖 Machine Learning<br>Approches non paramétriques"]
 F["XGBoost<br>Random Forest<br>MLP"]
-G["Évaluation<br>Accuracy · F1 · Recall"]
-H["Importance des variables<br>(Permutation Importance)"]
+G["🔍 Évaluation<br>Accuracy · F1 · Recall"]
+H["📌 Importance des variables<br>(Permutation Importance)"]
 
 %% Branche économétrie
-I["Modèles économétriques<br>(Logit, Probit, Multinomial)"]
+I["📈 Modèles économétriques<br>(Logit, Probit, Multinomial)"]
 
-J["Modèle final<br>(Comparaison ML / DL)"]
-K["Analyse & interprétation<br>Résultats et conclusions"]
+J["✅ Modèle final<br>(Comparaison ML / DL)"]
+K["📊 Analyse & interprétation<br>Résultats et conclusions"]
 
-A --> B --> C --> D
+A --> B
+B --> C
+C --> D
 
 D -->|Approches prédictives| E
-E --> F --> G --> H --> J
+E --> F
+F --> G
+G --> H
+H --> J
 
 D -->|Approches explicatives| I
 I --> J
 
 J --> K
+```
+
 
 
 ## Notebook 1 – Traitement de données
