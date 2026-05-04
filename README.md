@@ -1,6 +1,6 @@
 # Analyse et prédiction de la gravité des accidents de la route
 ## Contexte du projet
-Ce projet s’inscrit dans le cadre d’un projet tutoré en data science. Il a pour objectif d’analyser les déterminants de la gravité des accidents de la circulation à partir de données accidentologiques, en mobilisant des méthodes de traitement de données, d’économétrie et de Machine Learning / Deep Learning.
+Ce projet s’inscrit dans le cadre d’un projet tutoré en data science. Il a pour objectif d’analyser les déterminants de la gravité des accidents de la circulation à partir de données accidentologiques collectées sur le site du ministère dont le ficher BAAC, en mobilisant des méthodes de traitement de données, d’économétrie et de Machine Learning / Deep Learning.
 La gravité des accidents routiers constitue un enjeu majeur de sécurité publique. Comprendre les facteurs associés aux accidents graves permet d’améliorer les politiques de prévention et les dispositifs de sécurité routière.
 
 ## Objectifs
@@ -23,22 +23,22 @@ Le projet est organisé en trois notebooks principaux, conformément à la méth
 ```mermaid
 flowchart TB
 
-A["📁 data_bases<br>(Données brutes)"]
-B["🧹 Traitement_de_données<br>Traitement_de_données.ipynb"]
-C["📊 EDA, Économétrie<br>Analyse exploratoire<br>+ tests statistiques"]
+A["data_bases<br>(Données brutes)"]
+B["Traitement_de_données<br>Traitement_de_données.ipynb"]
+C["EDA, Économétrie<br>Analyse exploratoire<br>+ tests statistiques"]
 D{"Choix méthodologique"}
 
 %% Branche ML
-E["🤖 Machine Learning<br>Approches non paramétriques"]
+E["Machine Learning<br>Approches non paramétriques"]
 F["XGBoost<br>Random Forest<br>MLP"]
-G["🔍 Évaluation<br>Accuracy · F1 · Recall"]
-H["📌 Importance des variables<br>(Permutation Importance)"]
+G["Évaluation<br>Accuracy · F1 · Recall"]
+H["Importance des variables<br>(Permutation Importance)"]
 
 %% Branche économétrie
-I["📈 Modèles économétriques<br>(Logit, Probit, Multinomial)"]
+I["Modèles économétriques<br>(Logit, Probit, Multinomial)"]
 
-J["✅ Modèle final<br>(Comparaison ML / DL)"]
-K["📊 Analyse & interprétation<br>Résultats et conclusions"]
+J["Modèle final<br>(Comparaison ML / DL)"]
+K["Analyse & interprétation<br>Résultats et conclusions"]
 
 A --> B
 B --> C
@@ -57,28 +57,26 @@ J --> K
 ```
 
 
-
+---
 ## Notebook 1 – Traitement de données
-Ce premier notebook est consacré à la préparation et à la compréhension des données :
+Ce premier notebook est consacré à la collecte, à la compréhension des données, à la préparation et la la jointure des bases après nettoyage:
 
 chargement et nettoyage des données,
-gestion des valeurs manquantes,
-création et transformation de variables (âge, classes, indicateurs contextuels),
-analyses exploratoires :
+gestion des valeurs manquantes, des doublons pures et inpures
+création et transformation de variables (âge, classes, indicateurs contextuels)
+
+### Objectif : préparer des données propres et cohérentes pour la modélisation.
+
+---
+#### Notebook 2 – Analyse Exploiratoire et Économétrie (approches paramétriques)
+Ce notebook vise à l'analyse exploratoires :
 
 univariées,
 bivariées,
 multivariées,
-
-
-détection des valeurs aberrantes,
-étude de l’équilibre des classes,
 analyses exploratoires avancées (tests du χ², ACP, ACM).
 
-### Objectif : préparer des données propres et cohérentes pour la modélisation.
-
-#### Notebook 2 – Économétrie (approches paramétriques)
-Ce notebook vise à expliquer économiquement la gravité des accidents à l’aide de modèles paramétriques :
+expliquer économiquement la gravité des accidents à l’aide de modèles paramétriques :
 
 régression linéaire (modèle de référence),
 régression logistique binaire,
@@ -94,6 +92,7 @@ les limites des modèles paramétriques.
 
 ### Objectif : comprendre et interpréter les déterminants de la gravité.
 
+---
 #### Notebook 3 – Machine Learning et Deep Learning
 Ce notebook est dédié à une approche orientée prédiction, reposant sur des méthodes non paramétriques :
 
@@ -112,23 +111,13 @@ comparaison avec les modèles économétriques.
 
 ### Objectif : améliorer la performance prédictive et comparer les approches explicatives et prédictives.
 
-#### Méthodologie générale
-Le projet suit une démarche progressive et cohérente :
-
-Exploration et préparation des données
-Analyse explicative par l’économétrie
-Analyse prédictive par le Machine Learning / Deep Learning
-Comparaison des résultats et discussion
-
-Cette approche permet de montrer la complémentarité entre économétrie et Machine Learning.
-
-Remarques importantes
+#### Remarque importante
 
 Les fichiers techniques (ex. .DS_Store, .ipynb_checkpoints) sont ignorés via le fichier .gitignore.
 Les résultats présentés dépendent du jeu de données utilisé et de sa qualité.
 Les modèles ML visent la performance prédictive, tandis que les modèles économétriques privilégient l’interprétation.
 
-
+---
 ##### Conclusion
 Ce projet met en évidence que la gravité des accidents de la route résulte d’une combinaison complexe de facteurs liés à l’environnement, aux infrastructures et aux caractéristiques des usagers.
 L’association de méthodes économétriques et de techniques de Machine Learning permet d’obtenir une analyse à la fois interprétable et performante, répondant aux objectifs du projet.
